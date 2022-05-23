@@ -16,40 +16,34 @@ trImages[1] = "images/turcia2.jpg";
 trImages[2] = "images/turcia3.jpg";
 
 
-function trChangeImg() {
-    document.tr_slide.src = trImages[j];
-
-    // Check If Index Is Under Max
-    if (j < trImages.length - 1) {
-        // Add 1 to Index
-        j++;
-    } else {
-        // Reset Back To O
-        j = 0;
-    }
-
-    // Run function every x seconds
-    setTimeout("trChangeImg()", time);
-}
-
-
 // Change Image
-function grChangeImg() {
-    document.gr_slide.src = grImages[i];
+function changeImg(){
+	document.gr_slide.src = grImages[i];
 
-    // Check If Index Is Under Max
-    if (i < grImages.length - 1) {
-        // Add 1 to Index
-        i++;
-    } else {
-        // Reset Back To O
-        i = 0;
-    }
+	// Check If Index Is Under Max
+	if(i < grImages.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
 
-    // Run function every x seconds
-    setTimeout("grChangeImg()", time);
+	document.tr_slide.src = trImages[i];
+
+	// Check If Index Is Under Max
+	if(j < trImages.length - 1){
+	  // Add 1 to Index
+	  j++; 
+	} else { 
+		// Reset Back To O
+		j = 0;
+	}
+  
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
 }
+
 
 // Run function when page loads
-window.onload = trChangeImg;
-window.onload = grChangeImg;
+window.onload=changeImg;
