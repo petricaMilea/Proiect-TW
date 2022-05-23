@@ -93,13 +93,25 @@ header .profile-image:hover {
 .card {
     margin: 30px;
     padding: 20px 40px 40px;
-    max-width: 500px;
+    max-width: 50%;
     min-width: 450px;
-    text-align: left;
+    text-align: center;
     background: #fff;
     border-bottom: 4px solid #ccc;
     border-radius: 6px;
 }
+
+.card img {
+    width: 80%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.card em {
+    font-size: 1.5rem;
+}
+
 
 .card:hover {
     border-color: #37f5fc;
@@ -158,16 +170,12 @@ a.social {
     transition: all .25s;
 }
 
-a.twitter {
-    background-image: url(images/twitter.svg.png);
-    background-repeat: no-repeat;
-}
 
 a.linkedin {
     background-image: url(images/linkedin.svg);
 }
 
-a.github {
+a.facebook {
     background-image: url(images/github.svg);
 }
 
@@ -184,9 +192,11 @@ a.social:hover {
 
     .flex {
         display: flex;
-        max-width: 1200px;
+        flex-wrap: wrap;
+        max-width: 1200;
         justify-content: space-around;
         margin: 0 auto;
+        position: relative;
     }
 
     header {
