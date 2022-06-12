@@ -128,13 +128,11 @@ footer {
 }
 
 footer .copyright {
-  top: -8px;
   margin-right: 20px;
   font-size: .75em;
 }
 
 footer ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -144,31 +142,15 @@ footer ul li {
 }
 
 a.social {
-  display: inline;
-  text-indent: -20px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
+  margin-left: 10px;
   background-size: 50px 50px;
   opacity: .5;
-  transition: all .25s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg.png);
-  background-repeat: no-repeat;
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
+
 a.social:hover {
   opacity: 1;
 }
-.clearfix {
-  clear: both;
-}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
