@@ -10,33 +10,33 @@ grImages[1] = "images/grecia2.jpg";
 grImages[2] = "images/grecia3.jpg";
 grImages[3] = "images/grecia4.jpg";
 
-// Lista imagini Turcia
+// Turkey image list
 trImages[0] = "images/turcia1.jpg";
 trImages[1] = "images/turcia2.jpg";
 trImages[2] = "images/turcia3.jpg";
 
 
-// Change Image
+// slideshow images
 function changeImg() {
 	document.gr_slide.src = grImages[i];
 
-	// Check If Index Is Under Max
+	// check if index is less than length
 	if (i < grImages.length - 1) {
 		// Add 1 to Index
 		i++;
 	} else {
-		// Reset Back To O
+		// reset index to O
 		i = 0;
 	}
 
 	document.tr_slide.src = trImages[j];
 
-	// Check If Index Is Under Max
+	// check if index is less than length
 	if (j < trImages.length - 1) {
 		// Add 1 to Index
 		j++;
 	} else {
-		// Reset Back To O
+		// reset index to O
 		j = 0;
 	}
 
@@ -45,5 +45,6 @@ function changeImg() {
 }
 
 
-// Run function when page loads
-window.onload = changeImg;
+
+
+
